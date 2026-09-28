@@ -1,0 +1,46 @@
+[
+    {
+        "employee_id": "001",
+        "name": "Aman",
+        "age": 19,
+        "gender": "Male",
+        "department": "ece",
+        "designation": "proff",
+        "phone": "1234567890",
+        "email": "aman@gmail.com",
+        "salary": 12345.0
+    },
+    {
+        "employee_id": "002",
+        "name": "hunar",
+        "age": 18,
+        "gender": "Male",
+        "department": "cse",
+        "designation": "proff",
+        "phone": "1234567899",
+        "email": "hunar@gmail.com",
+        "salary": 123456.0
+    },
+    {
+        "employee_id": "003",
+        "name": "ashmit",
+        "age": 18,
+        "gender": "Male",
+        "department": "cse",
+        "designation": "proff",
+        "phone": "1234567800",
+        "email": "ashmit@gmail.com",
+        "salary": 1234567.0
+    },
+    {
+        "employee_id": "004",
+        "name": "aseem",
+        "age": 19,
+        "gender": "Male",
+        "department": "cse",
+        "designation": "proff",
+        "phone": "1234567891",
+        "email": "aseem@gmail.com",
+        "salary": 123456.0
+    }
+]
