@@ -2,7 +2,6 @@ import json
 import os
 from modules.employee import Employee
 from modules.validation import validate_name, validate_age, validate_gender, validate_text, validate_phone, validate_email, validate_salary
-
 FILE_NAME = "employees.json"
 def load_employees():
     if not os.path.exists(FILE_NAME):
@@ -78,7 +77,7 @@ def add_employee():
             break
         print("Invalid salary. Enter a valid number.")
     employee = Employee(employee_id, name, age, gender, department, designation, phone, email, salary)
-    employee_data = {"employee_id": employee.employee_id, "name": employee.name, "age": employee.age, "gender": employee.gender, "department": employee.department, "designation": employee.designation, "phone": employee.phone, "email": employee.email, "salary": employee.salary}
+    employee_data = {"employee_id": employee.employee_id,"name": employee.name,"age": employee.age,"gender": employee.gender,"department": employee.department,"designation": employee.designation,"phone": employee.phone,"email": employee.email,"salary": employee.salary}
     employees.append(employee_data)
     save_employees(employees)
     print("\nEmployee added successfully!")
@@ -91,7 +90,7 @@ def view_employees():
     print("EMPLOYEE LIST")
     print("=" * 80)
     for data in employees:
-        employee = Employee(data["employee_id"], data["name"], data["age"], data["gender"], data["department"], data["designation"], data["phone"], data["email"], data["salary"])
+        employee = Employee(data["employee_id"],data["name"],data["age"],data["gender"],data["department"],data["designation"],data["phone"],data["email"],data["salary"])
         employee.display()
 def search_employee():
     print("\n" + "=" * 45)
@@ -101,7 +100,7 @@ def search_employee():
     employees = load_employees()
     for data in employees:
         if data["employee_id"] == employee_id:
-            employee = Employee(data["employee_id"], data["name"], data["age"], data["gender"], data["department"], data["designation"], data["phone"], data["email"], data["salary"])
+            employee = Employee(data["employee_id"],data["name"],data["age"],data["gender"],data["department"],data["designation"],data["phone"],data["email"],data["salary"])
             print("\nEmployee Found:")
             employee.display()
             return
