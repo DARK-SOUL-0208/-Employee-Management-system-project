@@ -1,5 +1,4 @@
 from modules.employee_manager import load_employees, save_employees
-
 def delete_employee():
     print("\n" + "=" * 45)
     print("DELETE EMPLOYEE")
