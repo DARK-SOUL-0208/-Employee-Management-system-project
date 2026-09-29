@@ -1,6 +1,5 @@
 from modules.employee_manager import load_employees, save_employees
 from modules.validation import validate_name, validate_age, validate_gender, validate_text, validate_phone, validate_email, validate_salary
-
 def update_employee():
     print("\n" + "=" * 45)
     print("UPDATE EMPLOYEE")
