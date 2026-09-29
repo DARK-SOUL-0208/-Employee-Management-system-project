@@ -9,16 +9,15 @@ class Employee:
         self.phone = phone
         self.email = email
         self.salary = salary
-
     def display(self):
         print("-" * 45)
-        print("Employee ID :", self.employee_id)
-        print("Name        :", self.name)
-        print("Age         :", self.age)
-        print("Gender      :", self.gender)
-        print("Department  :", self.department)
-        print("Designation :", self.designation)
-        print("Phone       :", self.phone)
-        print("Email       :", self.email)
-        print("Salary      :", self.salary)
+        print("Employee ID:", self.employee_id)
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Gender:", self.gender)
+        print("Department:", self.department)
+        print("Designation:", self.designation)
+        print("Phone:", self.phone)
+        print("Email:", self.email)
+        print("Salary:", self.salary)
         print("-" * 45)
