@@ -2,20 +2,19 @@ from modules.employee_manager import add_employee, view_employees, search_employ
 from modules.employee_update import update_employee
 from modules.employee_delete import delete_employee
 from modules.reports import employee_report
-
 def employee_management():
     while True:
         print("\n" + "=" * 50)
-        print("          EMPLOYEE MANAGEMENT SYSTEM")
+        print("EMPLOYEE MANAGEMENT SYSTEM")
         print("=" * 50)
-        print("\n1. Add Employee")
+        print("1. Add Employee")
         print("2. View All Employees")
         print("3. Search Employee")
         print("4. Update Employee")
         print("5. Delete Employee")
         print("6. Employee Report")
         print("7. Exit")
-        choice = input("\nEnter your choice: ").strip()
+        choice = input("Enter your choice: ").strip()
         if choice == "1":
             add_employee()
         elif choice == "2":
