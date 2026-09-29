@@ -9,12 +9,16 @@ def validate_name(name):
 def validate_age(age):
     try:
         age = int(age)
-        return 18 <= age <= 70
+        if age >= 18 and age <= 70:
+            return True
+        return False
     except ValueError:
         return False
 def validate_gender(gender):
     gender = gender.strip().lower()
-    return gender in ["male", "female", "other"]
+    if gender == "male" or gender == "female" or gender == "other":
+        return True
+    return False
 def validate_text(text):
     text = text.strip()
     if text == "":
@@ -24,15 +28,19 @@ def validate_text(text):
             return False
     return True
 def validate_phone(phone):
-    return phone.isdigit() and len(phone) == 10
+    if phone.isdigit() and len(phone) == 10:
+        return True
+    return False
 def validate_email(email):
     email = email.strip()
-    if "@" not in email or "." not in email:
-        return False
-    return True
+    if "@" in email and "." in email:
+        return True
+    return False
 def validate_salary(salary):
     try:
         salary = float(salary)
-        return salary >= 0
+        if salary >= 0:
+            return True
+        return False
     except ValueError:
         return False
